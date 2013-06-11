@@ -32,6 +32,9 @@ body {
   margin: 0;
   text-align: center;
 }
+#loadTool .progress {
+  @include single-box-shadow(rgba(0,0,0,.25), 0px, 0px, 6px, 0px);
+}
 
 #tool {
   text-align: left;
