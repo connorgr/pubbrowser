@@ -1,0 +1,22 @@
+$base-text: #111;
+
+* {
+  color: $base-text;
+  font-family: 'Lucida Grande', Arial, sans-serif;
+}
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#loadTool {
+  background: #aaa;
+  width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+#tool {
+  display: none;
+}
