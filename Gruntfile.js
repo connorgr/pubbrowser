@@ -31,6 +31,15 @@ module.exports = function(grunt) {
           cssDir: 'src/css'
         }
       }
+    },
+
+    booty: {
+      dev: {
+        options: {
+          componentPath: 'components/',
+          dest: 'src/css'
+        }
+      }
     }
 
   });
@@ -41,6 +50,7 @@ module.exports = function(grunt) {
   // // Default task(s).
   // grunt.registerTask('default', ['uglify']);
 
+  grunt.loadNpmTasks('grunt-booty');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.registerTask('default', ['jshint', 'compass']);

@@ -5,14 +5,19 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
 </head>
 <body>
-  <div id="loadTool">
+  <section id="loadTool">
     <h1>Loading</h1>
-  </div>
-  <div id="tool">
+    <hr />
+    <div class="progress progress-striped active">
+      <div class="bar" style="width: 100%;"></div>
+    </div>
+  </section>
+  <section id="tool">
     <h1>Tool</h1>
-  </div>
+  </section>
 
   <script src="../components/d3/d3.min.js"></script>
   <script src="../data/chi2000-2013.json"></script>

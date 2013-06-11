@@ -1,5 +1,9 @@
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
+@import "compass/layout/grid-background";
+
+
+
 $base-text: #111;
 
 * {
@@ -30,5 +34,5 @@ body {
 }
 
 #tool {
-  display: none;
+  text-align: left;
 }
