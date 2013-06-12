@@ -16,6 +16,7 @@ $bootstrap-width: 940px;
 * {
   color: $base-text;
   font-family: 'Lucida Grande', Arial, sans-serif;
+  margin: 0;
 }
 body {
   background: #fff;
@@ -28,6 +29,8 @@ body {
   background: #ccc;
   border-bottom: 2px solid #999;
   padding: 15px;
+  position: relative;
+  z-index: 1;
 }
 #about .container {
   @include section-box;
@@ -53,4 +56,11 @@ body {
 }
 #tool .container {
   @include section-box;
+}
+
+// OVERRIDE
+.navbar {
+  margin: 0;
+  position: relative;
+  z-index: 20;
 }
