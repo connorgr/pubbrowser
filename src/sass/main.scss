@@ -24,6 +24,14 @@ body {
   text-align: center;
 }
 
+#about {
+  background: #ccc;
+  border-bottom: 2px solid #999;
+  padding: 15px;
+}
+#about .container {
+  @include section-box;
+}
 #loadTool {
   @include section-box;
   width: 400px;
