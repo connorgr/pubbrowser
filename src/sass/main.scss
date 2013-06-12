@@ -25,9 +25,14 @@ body {
   text-align: center;
 }
 
+.lgutter {
+  border-right: 1px solid #ccc;
+}
+
 #about {
   background: #ccc;
   border-bottom: 2px solid #999;
+  display: none;
   padding: 15px;
   position: relative;
   z-index: 1;
@@ -41,18 +46,18 @@ body {
   margin: 15px auto 0 auto;
   text-align: left;
 }
-#loadTool h1 {
-  color: #bbb;
-  margin: 0;
-  text-align: center;
-}
+
 #loadTool .progress {
   @include single-box-shadow(rgba(0,0,0,.25), 0px, 0px, 6px, 0px);
 }
 
 #tool {
+  display: none;
   margin: 15px 0 0 0;
   text-align: left;
+}
+#tool h1, h2, h3, h4, h5 {
+  color: #32A4F9;
 }
 #tool .container {
   //@include section-box;

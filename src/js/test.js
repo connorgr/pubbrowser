@@ -40,16 +40,6 @@ define([
       var state = $(e).is(":visible") ? $(e).hide() : $(e).show();
       console.log(divIds[2]);
     });
-
-    for (var d in debugActive) {
-      if(debugActive[d]) {
-        d3.select("#"+divIds[d])
-          .style("display", "block");
-      } else {
-        d3.select("#"+divIds[d])
-          .style("display", "none");
-      }
-    }
   };
 
   return {
