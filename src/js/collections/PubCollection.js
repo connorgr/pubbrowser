@@ -8,10 +8,14 @@ define([
   var chiFilePath = "../../../data/chi2000-2013.json";
   var PubCollection = Backbone.Collection.extend({
     model: PubModel,
-    title: "",
+
+    abstract: "",
     authors: [""],
-    year: [""],
-    venue: ""
+    doi: "",
+    title: "",
+    venue: "",
+    year: [""]
+
   });
 
   return PubCollection;
