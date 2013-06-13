@@ -1,12 +1,15 @@
 define([
   'underscore',
-  'backbone',
-  'd3'
-], function(_, Backbone, ignore) {
-  // TODO create constructor for proceeding name for binding data to model
+  'backbone'
+], function(_, Backbone) {
+  // TODO create constructor for publication name for binding data to model
   var PubModel = Backbone.Model.extend({
-    
+    defaults: function () {
+      return {
+        title: "Empty publication entry"
+      }
+    }
   });
 
-  return ProceedingsModel;
+  return PubModel;
 });

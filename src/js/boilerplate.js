@@ -1,9 +1,8 @@
 define([
   'jquery',
-  'underscore',
+  'underscore'
   'backbone',
   'd3'
 ], function($, _, Backbone, ignore) {
-
-  return {};
+    return {};
 });

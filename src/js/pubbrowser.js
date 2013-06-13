@@ -3,8 +3,10 @@ define([
   'underscore',
   'backbone',
   'test',
-], function($, _, Backbone, Test) {
+  'router'
+], function($, _, Backbone, Test, PubListView, Router) {
   var initialize = function () {
+    //Router.initialize();
     Test.initialize();
   };
 
