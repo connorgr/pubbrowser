@@ -12,7 +12,8 @@ define([
       this.pubCollection = new PubCollection();
       console.log(this.pubCollection.data);
 
-      el.append("p").text("Hello! The View works!");
+      // TODO Append text
+      //el.append("p").text("Hello! The View works!");
     }
   });
 
