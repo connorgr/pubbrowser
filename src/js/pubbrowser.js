@@ -3,12 +3,31 @@ define([
   'underscore',
   'backbone',
   'test',
-  'router'
-], function($, _, Backbone, Test, PubListView, Router) {
+  'views/PubListView'
+], function($, _, Backbone, Test, PubListView) {
   var initialize = function () {
-    //Router.initialize();
     Test.initialize();
   };
+
+  var Router = Backbone.Router.extend({
+    routes: {
+      'about': 'showAbout',
+      '': 'main',
+      '*actions': 'defaultAction'
+    },
+
+    main: function() {
+      console.log("Router");
+      console.log(PubListView);
+      var publistView = new PubListView();
+      console.log(publistView);
+      publistView.render();
+    }
+  });
+
+  var pub_router = new Router();
+  Backbone.history.start();
+
 
   return {
     initialize: initialize
