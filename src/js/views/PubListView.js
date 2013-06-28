@@ -10,11 +10,8 @@ define([
     el: d3.select("#publist"),
     render: function () {
       this.pubCollection = new PubCollection();
-      console.log("PubListView:");
-      console.log(this.pubCollection.data);
-      console.log(d3.select('#publist'));
-      d3.select('#publist')
-        .append('p').text("Hello! The View works!");
+
+      this.el.append('p').text("Hello! The View works!");
       // TODO Append text
       //el.append("p").text("Hello! The View works!");
     }
