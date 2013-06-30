@@ -7,11 +7,13 @@ define([
   // TODO fix this include'text!index.html'
 ], function(_, Backbone, ignore, PubCollection){//, index) {
   var PubListView = Backbone.View.extend({
-    el: d3.select("#publist"),
+    // use d3.select().node() to store the actual element
+    el: d3.select("#publist").node(),
     render: function () {
       this.pubCollection = new PubCollection();
 
-      this.el.append('p').text("Hello! The View works!");
+      // access via selecting again
+      d3.select(this.el).append('p').text("Hello! The View works!");
       // TODO Append text
       //el.append("p").text("Hello! The View works!");
     }
